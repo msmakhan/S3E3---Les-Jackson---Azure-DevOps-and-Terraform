@@ -5,8 +5,10 @@ terraform {
 provider "azurerm" {
     features {}
 
-    subscription_id = "d3d09aac-8ea0-4e79-8f1d-116986e3e516"
-    tenant_id = "f1de128f-22d8-479f-94d0-b67f1f92291c"
+    # Use a subscription id variable to set this field. This can be hardcoded but not recommended!!!
+    # subscription_id = "aaa"
+    # Use a tenant id variable to set this field. This can be hardcoded but not recommended!!!
+    # tenant_id = "yyy"
 }
 
 resource "azurerm_resource_group" "main" {
